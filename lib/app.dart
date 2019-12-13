@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wechat/chat/message_page.dart';
 
 enum ItemType { GroupChat, AddFriends, QrCode, Payments, Help }
 
@@ -12,39 +13,39 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   var _currentIndex = 0;
 
-  /* MessagePage message;
-  Contacts contacts;
+  MessagePage message;
+  /* Contacts contacts;
   Found found;
   Personal me; */
-  // currentPage() {
-  //   switch (_currentIndex) {
-  //     case 0:
-  //       if (message == null) {
-  //         message = MessagePage();
-  //       }
-  //       return message;
-  //       break;
-  //     case 1:
-  //       if (contacts == null) {
-  //         contacts = Contacts();
-  //       }
-  //       return contacts;
-  //       break;
-  //     case 0:
-  //       if (found == null) {
-  //         found = Found();
-  //       }
-  //       return found;
-  //       break;
-  //     case 0:
-  //       if (me == null) {
-  //         me = Personal();
-  //       }
-  //       return me;
-  //       break;
-  //     default:
-  //   }
-  // }
+  currentPage() {
+    switch (_currentIndex) {
+      case 0:
+        if (message == null) {
+          message = MessagePage();
+        }
+        return message;
+        break;
+     /*  case 1:
+        if (contacts == null) {
+          contacts = Contacts();
+        }
+        return contacts;
+        break;
+      case 0:
+        if (found == null) {
+          found = Found();
+        }
+        return found;
+        break;
+      case 0:
+        if (me == null) {
+          me = Personal();
+        }
+        return me;
+        break; */
+      default:
+    }
+  }
 
   _popupMenuItem(String title, {String imagePath,IconData icon}) {
     return PopupMenuItem(
@@ -156,7 +157,7 @@ class _AppState extends State<App> {
                   : Icon(Icons.person)),
         ],
       ),
-      // body: currentPage(),
+      body: currentPage(),
     );
   }
 }

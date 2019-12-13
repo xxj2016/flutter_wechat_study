@@ -53,4 +53,46 @@ List<MessageData> messageData = [
     DateTime.now(),
     MessageType.CHAT
   ),
+  new MessageData(
+    'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
+    '邱淑贞',
+    '我好像认识你',
+    DateTime.now(),
+    MessageType.CHAT
+  ),
+  new MessageData(
+    'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
+    '邱淑贞',
+    '我好像认识你',
+    DateTime.now(),
+    MessageType.CHAT
+  ),
+  new MessageData(
+    'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
+    '邱淑贞',
+    '我好像认识你',
+    DateTime.now(),
+    MessageType.CHAT
+  ),
+  new MessageData(
+    'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
+    '邱淑贞',
+    '我好像认识你',
+    DateTime.now(),
+    MessageType.CHAT
+  ),
+  new MessageData(
+    'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
+    '邱淑贞',
+    '我好像认识你',
+    DateTime.now(),
+    MessageType.CHAT
+  ),
+  new MessageData(
+    'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
+    '邱淑贞',
+    '我好像认识你',
+    DateTime.now(),
+    MessageType.CHAT
+  ),
 ];
