@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wechat/common/touch_callback.dart';
 
 class Search extends StatefulWidget {
   Search({Key key}) : super(key: key);
@@ -9,6 +10,24 @@ class Search extends StatefulWidget {
 
 class _SearchState extends State<Search> {
   FocusNode focusNode = new FocusNode();
+
+  _requestFocus() {
+    print('焦点');
+    FocusScope.of(context).requestFocus(focusNode);
+    return focusNode;
+  }
+
+  _getText(String text) {
+    return TouchCallBack(
+      isFeed: false,
+      onPressed: () {},
+      child: Text(
+        text,
+        style: TextStyle(fontSize: 16.0, color: Color(0xff1aad19)),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,6 +37,17 @@ class _SearchState extends State<Search> {
           children: <Widget>[
             Stack(
               children: <Widget>[
+                TouchCallBack(
+                  isFeed: false,
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Container(
+                    height: 45.0,
+                    margin: const EdgeInsets.only(left: 12.0, right: 10.0),
+                    child: Icon(Icons.chevron_left,color: Colors.black,),
+                  ),
+                ),
                 Container(
                   alignment: Alignment.centerLeft,
                   height: 45.0,
@@ -30,6 +60,7 @@ class _SearchState extends State<Search> {
                     children: <Widget>[
                       Expanded(
                         child: TextField(
+                          focusNode: _requestFocus(),
                           style: TextStyle(color: Colors.black, fontSize: 16.0),
                           onChanged: (String text) {},
                           decoration: InputDecoration(
@@ -49,11 +80,11 @@ class _SearchState extends State<Search> {
               ],
             ),
             Container(
-                margin: EdgeInsets.only(top: 50.0),
+                margin: EdgeInsets.only(top: 30.0),
                 child: Text(
-                  '搜索指定文章',
+                  '搜索指定内容',
                   style: TextStyle(
-                    fontSize: 16.0,
+                    fontSize: 14.0,
                     color: Color(0xffb5b5b5),
                   ),
                 )),
@@ -62,27 +93,9 @@ class _SearchState extends State<Search> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  Text(
-                    '小程序',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Color(0xffb5b5b5),
-                    ),
-                  ),
-                  Text(
-                    '小程序',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Color(0xffb5b5b5),
-                    ),
-                  ),
-                  Text(
-                    '小程序',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Color(0xffb5b5b5),
-                    ),
-                  ),
+                  _getText('朋友圈'),
+                  _getText('文章'),
+                  _getText('公众号'),
                 ],
               ),
             ),
@@ -91,27 +104,9 @@ class _SearchState extends State<Search> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  Text(
-                    '小程序',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Color(0xffb5b5b5),
-                    ),
-                  ),
-                  Text(
-                    '小程序',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Color(0xffb5b5b5),
-                    ),
-                  ),
-                  Text(
-                    '小程序',
-                    style: TextStyle(
-                      fontSize: 16.0,
-                      color: Color(0xffb5b5b5),
-                    ),
-                  ),
+                  _getText('小程序'),
+                  _getText('音乐'),
+                  _getText('表情'),
                 ],
               ),
             ),
