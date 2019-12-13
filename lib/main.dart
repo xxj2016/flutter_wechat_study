@@ -22,7 +22,8 @@ class MyApp extends StatelessWidget {
           ),
           withZoom: true,
           withLocalStorage: true,
-        )
+        ),
+        // "search": (BuildContext context) => Search(),
       },
       home: LoadingPage(),
     );
