@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:wechat/app.dart';
 import 'package:wechat/loading.dart';
+import 'package:wechat/search.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
           withZoom: true,
           withLocalStorage: true,
         ),
-        // "search": (BuildContext context) => Search(),
+        "search": (BuildContext context) => Search(),
       },
       home: LoadingPage(),
     );
