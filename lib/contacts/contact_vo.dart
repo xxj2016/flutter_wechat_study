@@ -81,16 +81,6 @@ List<ContactVO> contactData = [
     avatarUrl: 'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200'
   ),
   new ContactVO (
-    seationKey: 'A',
-    name: 'A清洁工',
-    avatarUrl: 'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200'
-  ),
-  new ContactVO (
-    seationKey: 'A',
-    name: 'A清洁工',
-    avatarUrl: 'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200'
-  ),
-  new ContactVO (
     seationKey: 'H',
     name: 'H清洁工',
     avatarUrl: 'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200'
