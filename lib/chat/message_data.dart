@@ -13,84 +13,84 @@ enum MessageType { SYSTEM, PUBLIC, CHAT, GROUP }
 List<MessageData> messageData = [
   new MessageData(
     'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
+    '厨师',
+    '我好像认识你我好像认识你我好像认识你我好像认识你我好像认识你我好像认识你我好像认识你我好像认识你',
+    DateTime.now(),
+    MessageType.CHAT
+  ),
+  new MessageData(
+    'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
+    '厨师',
     '我好像认识你',
     DateTime.now(),
     MessageType.CHAT
   ),
   new MessageData(
     'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
+    '厨师',
     '我好像认识你',
     DateTime.now(),
     MessageType.CHAT
   ),
   new MessageData(
     'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
+    '厨师',
     '我好像认识你',
     DateTime.now(),
     MessageType.CHAT
   ),
   new MessageData(
     'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
+    '厨师',
     '我好像认识你',
     DateTime.now(),
     MessageType.CHAT
   ),
   new MessageData(
     'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
+    '厨师',
     '我好像认识你',
     DateTime.now(),
     MessageType.CHAT
   ),
   new MessageData(
     'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
+    '厨师',
     '我好像认识你',
     DateTime.now(),
     MessageType.CHAT
   ),
   new MessageData(
     'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
+    '厨师',
     '我好像认识你',
     DateTime.now(),
     MessageType.CHAT
   ),
   new MessageData(
     'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
+    '厨师',
     '我好像认识你',
     DateTime.now(),
     MessageType.CHAT
   ),
   new MessageData(
     'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
+    '厨师',
     '我好像认识你',
     DateTime.now(),
     MessageType.CHAT
   ),
   new MessageData(
     'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
+    '厨师',
     '我好像认识你',
     DateTime.now(),
     MessageType.CHAT
   ),
   new MessageData(
     'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
-    '我好像认识你',
-    DateTime.now(),
-    MessageType.CHAT
-  ),
-  new MessageData(
-    'http://p3.music.126.net/TVzvnRLBdXS8UhMLARIy3Q==/109951163513338515.jpg?param=200y200',
-    '邱淑贞',
+    '厨师',
     '我好像认识你',
     DateTime.now(),
     MessageType.CHAT

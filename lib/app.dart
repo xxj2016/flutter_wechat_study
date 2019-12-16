@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wechat/chat/message_page.dart';
+import 'package:wechat/contacts/contacts.dart';
 
 enum ItemType { GroupChat, AddFriends, QrCode, Payments, Help }
 
@@ -14,8 +15,8 @@ class _AppState extends State<App> {
   var _currentIndex = 0;
 
   MessagePage message;
-  /* Contacts contacts;
-  Found found;
+  Contacts contacts;
+  /* Found found;
   Personal me; */
   currentPage() {
     switch (_currentIndex) {
@@ -25,13 +26,13 @@ class _AppState extends State<App> {
         }
         return message;
         break;
-     /*  case 1:
+      case 1:
         if (contacts == null) {
           contacts = Contacts();
         }
         return contacts;
         break;
-      case 0:
+      /* case 0:
         if (found == null) {
           found = Found();
         }
@@ -47,13 +48,16 @@ class _AppState extends State<App> {
     }
   }
 
-  _popupMenuItem(String title, {String imagePath,IconData icon}) {
+  _popupMenuItem(String title, {String imagePath, IconData icon}) {
     return PopupMenuItem(
       child: Row(
         children: <Widget>[
           imagePath != null
-          ? Image.network(imagePath,width: 32.0,height: 32.0)
-          : SizedBox(width: 32.0,height: 32.0,child: Icon(icon, color: Colors.white)),
+              ? Image.network(imagePath, width: 32.0, height: 32.0)
+              : SizedBox(
+                  width: 32.0,
+                  height: 32.0,
+                  child: Icon(icon, color: Colors.white)),
           Container(
             padding: EdgeInsets.only(left: 20.0),
             child: Text(
@@ -73,26 +77,25 @@ class _AppState extends State<App> {
         title: Text('微信'),
         actions: <Widget>[
           GestureDetector(
-            onTap: (){
+            onTap: () {
               Navigator.pushNamed(context, 'search');
             },
-            child: Icon(
-              Icons.search
-            ),
+            child: Icon(Icons.search),
           ),
           Padding(
             padding: EdgeInsets.only(left: 30.0, right: 20.0),
             child: GestureDetector(
-              onTap: (){
-                showMenu(context: context,
-                position: RelativeRect.fromLTRB(500.0, 76.0, 10.0, 0.0),
-                items: <PopupMenuItem>[
-                  _popupMenuItem('发起群聊', icon: Icons.message),
-                  _popupMenuItem('添加朋友', icon: Icons.add),
-                  _popupMenuItem('扫一扫', icon: Icons.settings_overscan),
-                  _popupMenuItem('收付款', icon: Icons.crop_free),
-                  _popupMenuItem('帮助与反馈', icon: Icons.email),
-                ]);
+              onTap: () {
+                showMenu(
+                    context: context,
+                    position: RelativeRect.fromLTRB(500.0, 76.0, 10.0, 0.0),
+                    items: <PopupMenuItem>[
+                      _popupMenuItem('发起群聊', icon: Icons.message),
+                      _popupMenuItem('添加朋友', icon: Icons.add),
+                      _popupMenuItem('扫一扫', icon: Icons.settings_overscan),
+                      _popupMenuItem('收付款', icon: Icons.crop_free),
+                      _popupMenuItem('帮助与反馈', icon: Icons.email),
+                    ]);
               },
               child: Icon(Icons.add),
             ),
